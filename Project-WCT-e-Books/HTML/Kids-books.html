@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Books</title>
+
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/CSS/book.css">
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="/image/logo.png" alt="Logo">
+            <span>e-Books</span>
+        </div>
+        <nav class="navbar">
+            <a href="/HTML/index.html">Home</a>
+            <a href="/HTML/Bookspage.html">Books</a>
+            <a href="/HTML/Kids-books.html">Kid Books</a>
+            <a href="/HTML/Audio.html">Audio</a>
+        </nav>
+        <div class="icon">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <a href="/HTML/login.html" ><img src="/pic/login.png" alt="login"></a>
+        </div>
+    </header>
+
+    <section class="book-section">
+        <h1>Kid Books</h1>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/51oR8GP6wYL._AC_UF1000,1000_QL80_.jpg" alt="Cool Cat (What My Cat Does?)">
+            <div class="book-info">
+                <h2>Cool Cat (What My Cat Does?)</h2>
+                <p class="author">Nuno Alves</p>
+                <div class="rating-container">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                  </div>                 <p class="description"><strong style="color: blue;">Description:</strong> Have you ever wondered what your Cat does when you are at school? Find out in this cute rhyming tale. A rhyming story for young children and cat lovers everywhere. Endearing pictures by Naobim illustrate this picture book which also doubles as a colouring book.</p>
+                <button> <a href="/Books/Kid Books/Cool_Cat.pdf" style="text-decoration: none; color: white;">Read Book</a></button>
+                <button class="btn like" id="like1" onclick="toggleLike(1)">Like</button>
+                <div class="genre">
+                    <span>Published: November 8, 2023</span> • <span>Aothor: Nuno Alves</span> • <span>Nationality: Portuguese</span> • <span>Language: English</span>
+                </div>
+            </div>
+        </div>
+
+        <hr style="width: 90%; margin: auto;">
+
+        <div class="book-card">
+            <img src="https://freekidsbooks.org/wp-content/uploads/2019/12/save_the_planet-FKB-Be_Nice-cover.jpg?ezimgfmt=ngcb2/notWebP" alt="Save the Planet">
+            <div class="book-info">
+                <h2>Save the Planet</h2>
+                <p class="author">Danielle Bruckert, Zehnya Bruckert</p>
+                <div class="rating-container">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                  </div>                 
+                <p class="description"><strong style="color: blue;">Description:</strong> Save the Planet is a short simple book for young children, and beginner ESL readers, promoting values of conservation and ecologically-friendly behaviour.</p>
+                <button> <a href="/Books/Kid Books/Save_the_Planet.pdf" style="text-decoration: none; color: white;">Read Book</a></button>
+                <button class="btn like" id="like2" onclick="toggleLike(2)">Like</button>
+                <div class="genre">
+                    <span>Published: July 29, 2023</span> • <span>Author: Danielle Bruckert, Zehnya Bruckert</span> • <span>Nationality: New Zealand</span> • <span>Language: English</span>
+                </div>
+            </div>
+        </div>
+
+        <hr style="width: 90%; margin: auto;">
+
+        <div class="book-card">
+            <img src="https://freekidsbooks.org/wp-content/uploads/2021/09/Always-be-good_Be-Nice-Series-Book_5-cover.jpg?ezimgfmt=ngcb2/notWebP" alt="Always Be Good">
+            <div class="book-info">
+                <h2>Always Be Good</h2>
+                <p class="author">Danielle Bruckert, Zehnya Bruckert</p>
+                <div class="rating-container">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                  </div>                 <p class="description"><strong style="color: blue;">Description:</strong> Always Be Good is a short simple book for young children, and beginner ESL readers, promoting important behaviours young children need to learn.</p>
+                <button> <a href="/Books/Kid Books/Always_Be_Good.pdf" style="text-decoration: none; color: white;">Read Book</a></button>
+                <button class="btn like" id="like3" onclick="toggleLike(3)">Like</button>
+                <div class="genre">
+                    <span>Published: December 29, 2023</span> • <span>Author: Danielle Bruckert, Zehnya Bruckert</span> • <span>Nationality: New Zealand</span> • <span>Language: English</span>
+                </div>
+            </div>
+        </div>
+
+        <hr style="width: 90%; margin: auto;">
+
+        <div class="book-card">
+            <img src="https://freekidsbooks.org/wp-content/uploads/2024/02/hippo-Cover.jpg?ezimgfmt=ngcb2/notWebP" alt="Hippo Naughty Hippo">
+            <div class="book-info">
+                <h2>Hippo Naughty Hippo</h2>
+                <p class="author">Adaption Danielle Bruckert, Illustrations Megan Andrews</p>
+                <div class="rating-container">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                  </div>                 <p class="description"><strong style="color: blue;">Description:</strong> What is Hippo doing? And is she really naughty? Find out in this cute, beautifully illustrated text for young children. Repetition and simple language can also be useful for learn to read age.</p>
+                <button> <a href="/Books/Kid Books/Hippo_Naughty_Hippo-FKB.pdf" style="text-decoration: none; color: white;">Read Book</a></button>
+                <button class="btn like" id="like4" onclick="toggleLike(4)">Like</button>
+                <div class="genre">
+                    <span>Published: February 11, 2024</span> • <span>Author: Adaption Danielle Bruckert, Illustrations Megan Andrews</span> • <span>Nationality: Australia</span> • <span>Language: English</span>
+                </div>
+            </div>
+        </div>
+
+        <hr style="width: 90%; margin: auto;">
+
+        <div class="book-card">
+            <img src="https://freekidsbooks.org/wp-content/uploads/2024/02/Superciw-IV-Cover.jpg" alt="Supercow IV – In a Minute…">
+            <div class="book-info">
+                <h2>Supercow IV – In a Minute…</h2>
+                <p class="author"> Kiwi Opa and Danielle Bruckert</p>
+                <div class="rating-container">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                  </div>                <p class="description"><strong style="color: blue;">Description:</strong> A little girl and her mother walk through the park, but her mother is very distracted. Can Supercow help? Another book in the popular Supercow series.
+
+                  </p>
+                <button> <a href="/Books/Kid Books/supercowIV-In_a_Minute....pdf" style="text-decoration: none; color: white;">Read Book</a></button>
+                <button class="btn like" id="like5" onclick="toggleLike(5)">Like</button>
+                <div class="genre">
+                    <span>Published: February 24, 2024</span> • <span>Author: Kiwi Opa and Danielle Bruckert</span> • <span>Nationality: New Zealand</span> • <span>Language: English</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="/javascript/book.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+ /* Root Variables */
+ :root {
+    --primary-color: #333;
+    --secondary-color: #FEF9D9;
+    --accent-color: #8EACCD;
+    --button-bg: #8da6d9;
+    --text-color: #333;
+    --link-hover-color: #4CAF50;
+    --box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFF;
+    color: var(--primary-color);
+    padding: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: var(--primary-color);
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+.icon img {
+    width: 50px;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 5s;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.book-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #6c8c4a;
+    margin-bottom: 20px;
+}
+
+.book-card {
+    display: flex;
+    border-radius: 8px;
+    padding: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.book-card img {
+    width: 220px;
+    height: 290px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.book-info {
+    flex: 1;
+    margin-left: 100px;
+    margin-top:20px ;
+}
+
+.book-info h2 {
+    font-size: 2em;
+    color: #2b3e50;
+    margin-bottom: 5px;
+}
+
+.book-info .author {
+    font-weight: bold;
+    color: #6c8c4a;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.book-info .rating {
+    color: #ffdd57;
+    margin-bottom: 10px;
+}
+
+.book-info .description {
+    font-size: 1.3em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+button  {
+    padding: 12px 20px;
+    background-color: #6c8c4a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+button:hover {
+    background-color: #567136;
+}
+
+.genre {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.genre span {
+    margin-right: 8px;
+}
+
+.btn.like {
+    background-color: #007bff;
+    color: #fff;
+    margin-left: 40px;
+
+}
+
+.btn.like.unliked {
+    background-color: #9bb1ed;
+}
+
+.rating-container {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.star {
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star.rated {
+    color: #FFD700;
+}
+
+@media (max-width: 991px) {
+    .book-card {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+  
+    .book-card img {
+      width: 180px;
+      height: 240px;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  
+    .book-info {
+      margin-left: 0;
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    .book-info h2 {
+      font-size: 1.8em;
+    }
+
+    .rating-container {
+        justify-content: center;
+      }
+    
+  
+    button {
+      padding: 10px 18px;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .icon {
+        display: flex; 
+        align-items: center; 
+        gap: 1rem; 
+    }
+
+    .icon #menu-btn {
+        display: inline-block; 
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--primary-color);
+        transition: color 0.3s;
+    }
+
+    .icon img {
+        width: 60px; 
+        height: auto;
+        cursor: pointer;
+    }
+
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+  
+    .book-card {
+      margin-top: 80px;
+      padding: 20px;
+    }
+  
+    .book-info .description {
+      font-size: 1.2em;
+    }
+  
+    .rating-container {
+      justify-content: center;
+    }
+  
+    .btn.like {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    body {
+      padding: 20px;
+    }
+
+    html {
+        font-size: 55%;
+    }
+    .heading {
+        font-size: 2.5rem;
+    }
+    .icon img {
+        width: 40px; 
+        height: auto;
+        cursor: pointer;
+    }
+  
+    .book-card {
+        margin-top: 80px;
+        padding: 15px;
+    }
+  
+    .book-card img {
+      width: 150px;
+      height: 200px;
+    }
+  
+    .book-info h2 {
+      font-size: 1.5em;
+    }
+  
+    .book-info .description {
+      font-size: 1em;
+    }
+  
+    button {
+      padding: 8px 15px;
+      font-size: 16px;
+    }
+  
+    .genre {
+      font-size: 0.9em;
+    }
+  }
+  

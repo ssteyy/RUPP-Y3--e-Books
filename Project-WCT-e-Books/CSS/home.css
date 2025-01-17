@@ -1,0 +1,278 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #FEF9D9;
+    --accent-color: #8EACCD;
+    --button-bg: #8da6d9;
+    --text-color: #333;
+    --link-hover-color: #4CAF50;
+    --box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFF;
+    color: var(--primary-color);
+    padding: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.navbar a {
+    color: var(--primary-color);
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+.icon img {
+    width: 50px;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 5s;
+}
+
+/* Main Content */
+.main-content {
+    height: 800px;
+    padding-top: 15rem;
+    text-align: center;
+    background-image: url('/pic/BentoGrid.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.main-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main-content p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.main-content .cta-button {
+    display: inline-block;
+    background: var(--button-bg);
+    color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.main-content .cta-button:hover {
+    background: var(--accent-color);
+}
+
+/* Footer Styles */
+footer {
+    background: #FFF;
+    color: var(--text-color);
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 1rem;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: var();
+    color:black;
+    text-align: center;
+    line-height: 30px;
+}
+
+.logo1 {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo1 img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 991px)
+{
+html
+{
+   
+font-size: 90%;
+}
+
+.header
+{
+    padding: 2rem;
+}
+main
+{
+    padding: 2rem ;
+}
+}
+
+@media (max-width: 768px)
+{
+.icon {
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+}
+
+.icon #menu-btn {
+    display: inline-block; 
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+.icon img {
+    width: 60px; 
+    height: auto;
+    cursor: pointer;
+}
+
+.header .navbar
+{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
+}
+
+.header .navbar a
+{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+}
+
+}
+
+@media (max-width: 450px)
+{
+html
+{
+font-size: 50%;
+}
+.heading
+{
+    font-size: 2.5rem;
+}
+.icon img {
+    width: 30px; 
+    height: auto;
+    cursor: pointer;
+}
+
+.main-content {
+    height: 450px;
+    padding-top: 20rem;
+    text-align: center;
+    background-image: url('/pic/BentoGrid.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+}
